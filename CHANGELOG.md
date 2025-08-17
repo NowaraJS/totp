@@ -1,4 +1,16 @@
 
+## v1.1.2
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.1.1...v1.1.2)
+
+### 🦉 Chore
+
+- **🦉:** [Update package.json with correct name and description] ([e007586](https://github.com/NowaraJS/totp/commit/e007586))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.1
 
 [compare changes](https://github.com/NowaraJS/totp/compare/v1.1.0...v1.1.1)
