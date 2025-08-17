@@ -1,8 +1,4 @@
-// # ————————— Error ————————— #
-export * from './error/pkgError';
-export type * from './error/types/pkgErrorOptions';
-
-// # ————————— Utils ————————— #
-export * from './utils/enums/exampleKeyError';
-export * from './utils/foo';
+export { hotp } from './hotp';
+export { buildOtpAuthUri, parseOtpAuthUri } from './otpAuthUri';
+export { totp, verifyTotp } from './totp';
 
