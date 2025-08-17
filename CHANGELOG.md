@@ -1,4 +1,16 @@
 
+## v1.1.1
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.1.0...v1.1.1)
+
+### 📖 Documentation
+
+- **📖:** [Update README with comprehensive TOTP features and usage] ([e8f8369](https://github.com/NowaraJS/totp/commit/e8f8369))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.0
 
 
