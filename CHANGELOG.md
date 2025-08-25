@@ -1,4 +1,27 @@
 
+## v1.1.3
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.1.2...v1.1.3)
+
+### 📖 Documentation
+
+- **📖:** [Add Contributor Covenant Code of Conduct] ([ef8a067](https://github.com/NowaraJS/totp/commit/ef8a067))
+- **📖:** [Add contributing guidelines to the project] ([933b053](https://github.com/NowaraJS/totp/commit/933b053))
+- **📖:** [Add SECURITY.md for vulnerability reporting and supported versions] ([6d888c1](https://github.com/NowaraJS/totp/commit/6d888c1))
+
+### 📦 Build
+
+- **📦:** [Update dependencies and author information in package.json] ([c3eb931](https://github.com/NowaraJS/totp/commit/c3eb931))
+
+### 🦉 Chore
+
+- **🦉:** [Update contact email in issue template] Updated the contact email in the issue template from komiriko@pm.me to nowarajs@pm.me to reflect the correct address for project inquiries. ([b8cc348](https://github.com/NowaraJS/totp/commit/b8cc348))
+- **🦉:** [rename MIT License file with explicit .md] ([cc0cdc8](https://github.com/NowaraJS/totp/commit/cc0cdc8))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.2
 
 [compare changes](https://github.com/NowaraJS/totp/compare/v1.1.1...v1.1.2)
