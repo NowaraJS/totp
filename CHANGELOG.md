@@ -1,4 +1,28 @@
 
+## v1.1.6
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.1.5...v1.1.6)
+
+### 🧹 Refactors
+
+- **🧹:** [Rename files to kebab-case and refacto BaseError V1.3] ([2ecb1b1](https://github.com/NowaraJS/totp/commit/2ecb1b1))
+
+### 📦 Build
+
+- **📦:** [Update devDependencies in package.json] ([0046989](https://github.com/NowaraJS/totp/commit/0046989))
+
+### 🦉 Chore
+
+- **🦉:** [Add Dependabot configuration for package updates] ## Chores - Added a new Dependabot configuration file to manage package updates. ([fc38724](https://github.com/NowaraJS/totp/commit/fc38724))
+
+### 🧪 Tests
+
+- **🧪:** [Rename files to kebab-case and refacto BaseError V1.3] ([1207bf9](https://github.com/NowaraJS/totp/commit/1207bf9))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.5
 
 [compare changes](https://github.com/NowaraJS/totp/compare/v1.1.4...v1.1.5)
