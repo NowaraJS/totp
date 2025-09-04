@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'bun:test';
 
-import { TOTP_ERROR_KEYS } from '#/enums/totpErrorKeys';
-import { buildOtpAuthUri, parseOtpAuthUri } from '#/otpAuthUri';
+import { TOTP_ERROR_KEYS } from '#/enums/totp-error-keys';
+import { buildOtpAuthUri, parseOtpAuthUri } from '#/otp-auth-uri';
 
 describe('buildOtpAuthUri', () => {
 	test('should build a valid OTP Auth URI', () => {
@@ -13,8 +13,6 @@ describe('buildOtpAuthUri', () => {
 		expect(uri).toBe('otpauth://totp/user%40example.com?secret=2W3YP3JOW476T4APP36YTZHFBJTWRVJQ&issuer=Example');
 	});
 });
-
-
 
 describe('parseOtpAuthUri', () => {
 	test('should parse a valid OTP Auth URI', () => {
