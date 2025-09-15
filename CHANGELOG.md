@@ -1,4 +1,24 @@
 
+## v1.1.7
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.1.6...v1.1.7)
+
+### 📦 Build
+
+- **📦:** [Update devDependencies for improved compatibility] ## Build Changes - Updated `@eslint/js` from `^9.34.0` to `^9.35.0` - Updated `@nowarajs/error` from `^1.3.0` to `^1.3.1` - Updated `@types/bun` from `^1.2.21` to `^1.2.22` - Updated `eslint` from `^9.34.0` to `^9.35.0` - Updated `globals` from `^16.3.0` to `^16.4.0` - Updated `typescript-eslint` from `^8.42.0` to `^8.43.0` - Updated `@nowarajs/error` in `peerDependencies` from `^1.1.8` to `^1.3.1` ([139b3b8](https://github.com/NowaraJS/totp/commit/139b3b8))
+
+### 🦉 Chore
+
+- **🦉:** [Change Dependabot update schedule from daily to weekly] ([637df10](https://github.com/NowaraJS/totp/commit/637df10))
+
+### 🎨 Styles
+
+- **🎨:** [Reorder import statements for consistency] Updated the import statements in dynamic-truncation.spec.ts to follow a consistent order, enhancing code readability and maintainability. ([a77f96c](https://github.com/NowaraJS/totp/commit/a77f96c))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.6
 
 [compare changes](https://github.com/NowaraJS/totp/compare/v1.1.5...v1.1.6)
