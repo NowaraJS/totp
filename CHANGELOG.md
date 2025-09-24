@@ -1,4 +1,16 @@
 
+## v1.1.8
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.1.7...v1.1.8)
+
+### 📦 Build
+
+- **📦:** [Update Dependencies] ([1f2600f](https://github.com/NowaraJS/totp/commit/1f2600f))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.7
 
 [compare changes](https://github.com/NowaraJS/totp/compare/v1.1.6...v1.1.7)
