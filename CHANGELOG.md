@@ -1,4 +1,28 @@
 
+## v1.1.9
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.1.8...v1.1.9)
+
+### 📦 Build
+
+- **📦:** [Update devDependencies to latest versions] ([2fecd12](https://github.com/NowaraJS/totp/commit/2fecd12))
+
+### 🦉 Chore
+
+- **🦉:** [Remove Dependabot configuration file] ([be3991b](https://github.com/NowaraJS/totp/commit/be3991b))
+
+### 🧪 Tests
+
+- **🧪:** [Update test suites to use concurrent execution] ([f2fbecd](https://github.com/NowaraJS/totp/commit/f2fbecd))
+
+### 🤖 CI
+
+- **🤖:** [Add setup actions for Bun and Git, refactor workflows to utilize them] ([7db8717](https://github.com/NowaraJS/totp/commit/7db8717))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.8
 
 [compare changes](https://github.com/NowaraJS/totp/compare/v1.1.7...v1.1.8)
