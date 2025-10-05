@@ -6,8 +6,8 @@ import {
 	base32Encode
 } from '#/utils/base32';
 
-describe('base32', () => {
-	describe('base32Encode', () => {
+describe.concurrent('base32', () => {
+	describe.concurrent('base32Encode', () => {
 		test('should encode a Uint8Array to a base32 string', () => {
 			const input = new Uint8Array([0x48, 0x65, 0x6c, 0x6c, 0x6f]);
 			const expected = 'JBSWY3DP';
@@ -15,7 +15,7 @@ describe('base32', () => {
 		});
 	});
 
-	describe('base32Decode', () => {
+	describe.concurrent('base32Decode', () => {
 		test('should decode a base32 string to a Uint8Array', () => {
 			const input = 'JBSWY3DP';
 			const expected = new Uint8Array([0x48, 0x65, 0x6c, 0x6c, 0x6f]);

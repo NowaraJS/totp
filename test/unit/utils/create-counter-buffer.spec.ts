@@ -2,7 +2,7 @@ import { describe, test, expect } from 'bun:test';
 
 import { createCounterBuffer } from '#/utils/create-counter-buffer';
 
-describe('createCounterBuffer', () => {
+describe.concurrent('createCounterBuffer', () => {
 	test('should create an 8-byte buffer from bigint counter', () => {
 		const counter = 1n;
 		const buffer = createCounterBuffer(counter);

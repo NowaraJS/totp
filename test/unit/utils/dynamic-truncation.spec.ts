@@ -2,7 +2,7 @@ import { describe, expect, test } from 'bun:test';
 
 import { dynamicTruncation } from '#/utils/dynamic-truncation';
 
-describe('dynamicTruncation', () => {
+describe.concurrent('dynamicTruncation', () => {
 	test('should correctly truncate HMAC array with 6 digits', () => {
 		// Test case from RFC 4226 Appendix D
 		const hmacArray = new Uint8Array([
