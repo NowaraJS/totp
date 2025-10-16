@@ -1,4 +1,28 @@
 
+## v1.1.10
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.1.9...v1.1.10)
+
+### 📖 Documentation
+
+- **📖:** [Update Readme] ([6b71460](https://github.com/NowaraJS/totp/commit/6b71460))
+
+### 📦 Build
+
+- **📦:** [Update devDependencies in package.json] ([169dbc8](https://github.com/NowaraJS/totp/commit/169dbc8))
+
+### 🦉 Chore
+
+- **🦉:** [Add semver field to changelog entries] ([76e88d3](https://github.com/NowaraJS/totp/commit/76e88d3))
+
+### 🎨 Styles
+
+- **🎨:** [Enhance ESLint configuration for improved code style] ([ff317c3](https://github.com/NowaraJS/totp/commit/ff317c3))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.9
 
 [compare changes](https://github.com/NowaraJS/totp/compare/v1.1.8...v1.1.9)
