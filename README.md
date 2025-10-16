@@ -36,7 +36,6 @@
 - 📐 **Flexible Digits**: Support for 6-8 digit codes
 - ⏰ **Time Window**: Configurable time periods and verification windows
 - 🎯 **Base32 Encoding**: Built-in Base32 encoding/decoding utilities
-- 🧪 **Type Safe**: Full TypeScript support with comprehensive type definitions
 
 ## 🔧 Installation
 
