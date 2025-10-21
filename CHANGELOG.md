@@ -1,4 +1,20 @@
 
+## v1.1.11
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.1.10...v1.1.11)
+
+### 🦉 Chore
+
+- **🦉:** [Update .gitignore to include .zed directory] ([61c6205](https://github.com/NowaraJS/totp/commit/61c6205))
+
+### 🤖 CI
+
+- **🤖:** [Rename main-ci to main-test in workflow configuration] ([beb87a7](https://github.com/NowaraJS/totp/commit/beb87a7))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.10
 
 [compare changes](https://github.com/NowaraJS/totp/compare/v1.1.9...v1.1.10)
