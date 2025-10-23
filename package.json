@@ -23,7 +23,7 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.38.0",
-		"@nowarajs/error": "^1.3.7",
+		"@nowarajs/error": "^1.3.8",
 		"@stylistic/eslint-plugin": "^5.5.0",
 		"@types/bun": "^1.3.0",
 		"eslint": "^9.38.0",
@@ -32,7 +32,7 @@
 		"typescript": "^5.9.3"
 	},
 	"peerDependencies": {
-		"@nowarajs/error": "^1.3.7"
+		"@nowarajs/error": "^1.3.8"
 	},
 	"exports": {
 		"./enums": "./dist/enums/index.js",
