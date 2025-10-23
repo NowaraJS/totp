@@ -1,6 +1,6 @@
 {
 	"name": "@nowarajs/totp",
-	"version": "1.1.11",
+	"version": "1.1.12",
 	"author": "NowaraJS",
 	"description": "A comprehensive Time-based One-Time Password (TOTP) and HMAC-based One-Time Password (HOTP)",
 	"type": "module",

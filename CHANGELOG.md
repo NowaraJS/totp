@@ -1,4 +1,20 @@
 
+## v1.1.12
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.1.11...v1.1.12)
+
+### 📖 Documentation
+
+- **📖:** [Update readme] ([18b100a](https://github.com/NowaraJS/totp/commit/18b100a))
+
+### 📦 Build
+
+- **📦:** [Update @nowarajs/error dependency version] ## Build Changes - Updated `@nowarajs/error` from version `^1.3.7` to `^1.3.8` in both `devDependencies` and `peerDependencies`. ([26eb41b](https://github.com/NowaraJS/totp/commit/26eb41b))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.11
 
 [compare changes](https://github.com/NowaraJS/totp/compare/v1.1.10...v1.1.11)
