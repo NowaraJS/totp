@@ -1,4 +1,20 @@
 
+## v1.2.0
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.1.12...v1.2.0)
+
+### 🚀 Enhancements
+
+- **🚀:** [use new InternalError] ([f56c84e](https://github.com/NowaraJS/totp/commit/f56c84e))
+
+### 📦 Build
+
+- **📦:** [Update dependencies in package.json] ## Build Changes - Updated `@eslint/js` from `^9.38.0` to `^9.39.1` - Updated `@nowarajs/error` from `^1.3.8` to `^1.3.10` - Updated `@types/bun` from `^1.3.0` to `^1.3.2` - Updated `eslint` from `^9.38.0` to `^9.39.1` - Updated `globals` from `^16.4.0` to `^16.5.0` - Updated `typescript-eslint` from `^8.46.2` to `^8.46.4` - Updated peer dependency `@nowarajs/error` from `^1.3.8` to `^1.3.10` ([8f5f16e](https://github.com/NowaraJS/totp/commit/8f5f16e))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.12
 
 [compare changes](https://github.com/NowaraJS/totp/compare/v1.1.11...v1.1.12)
