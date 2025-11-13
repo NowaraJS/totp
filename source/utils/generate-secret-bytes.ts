@@ -1,4 +1,4 @@
-import { BaseError } from '@nowarajs/error';
+import { InternalError } from '@nowarajs/error';
 import { getRandomValues } from 'crypto';
 
 import { TOTP_ERROR_KEYS } from '#/enums/totp-error-keys';
@@ -8,12 +8,12 @@ import { TOTP_ERROR_KEYS } from '#/enums/totp-error-keys';
  *
  * @param length - Number of bytes to generate (default: 20)
  *
- * @throws ({@link BaseError}) if length is not positive
+ * @throws ({@link InternalError}) if length is not positive
  *
  * @returns Uint8Array containing the random bytes
  */
 export const generateSecretBytes = (length = 20): Uint8Array => {
 	if (length <= 0)
-		throw new BaseError(TOTP_ERROR_KEYS.INVALID_SECRET_LENGTH);
+		throw new InternalError(TOTP_ERROR_KEYS.INVALID_SECRET_LENGTH);
 	return getRandomValues(new Uint8Array(length));
 };
