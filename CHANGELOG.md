@@ -1,4 +1,28 @@
 
+## v1.2.2
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.2.1...v1.2.2)
+
+### ⚡ Performance
+
+- **⚡:** [optimize Base32 encode/decode performance] ([c64bd7f](https://github.com/NowaraJS/totp/commit/c64bd7f))
+
+### 🔧 Fixes
+
+- **🔧:** [add security hardening across TOTP/HOTP implementation] ([875604b](https://github.com/NowaraJS/totp/commit/875604b))
+
+### 🌊 Types
+
+- **🌊:** [add HashAlgorithm, OtpDigits and new error keys] ([e2e6ed8](https://github.com/NowaraJS/totp/commit/e2e6ed8))
+
+### 🧪 Tests
+
+- **🧪:** [expand test coverage from 39 to 80 tests] ([7821322](https://github.com/NowaraJS/totp/commit/7821322))
+
+### ❤️ Contributors
+
+- Komiriko <komiriko@pm.me>
+
 ## v1.2.1
 
 [compare changes](https://github.com/NowaraJS/totp/compare/v1.2.0...v1.2.1)
