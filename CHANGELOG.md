@@ -1,4 +1,16 @@
 
+## v1.2.4
+
+[compare changes](https://github.com/NowaraJS/totp/compare/v1.2.3...v1.2.4)
+
+### 📦 Build
+
+- **📦:** [update deps + npmignore] ([59cc1e4](https://github.com/NowaraJS/totp/commit/59cc1e4))
+
+### ❤️ Contributors
+
+- Komiriko <komiriko@pm.me>
+
 ## v1.2.3
 
 [compare changes](https://github.com/NowaraJS/totp/compare/v1.2.2...v1.2.3)
