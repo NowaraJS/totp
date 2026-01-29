@@ -31,17 +31,14 @@ const _BASE32_LOOKUP: ReadonlyMap<string, number> = new Map(
  * @returns Base32 encoded string
  */
 export const base32Encode = (input: string | Uint8Array, withPadding = true): string => {
-	const bytes = input instanceof Uint8Array
-		? input
-		: new TextEncoder().encode(input);
+	const bytes = input instanceof Uint8Array ? input : new TextEncoder().encode(input);
 
-	if (bytes.length === 0)
-		return '';
+	if (bytes.length === 0) return '';
 
 	// Performance: Pre-allocate array for output characters
 	// Each 5 bytes → 8 Base32 chars, so estimate upper bound
 	const estimatedLength = Math.ceil((bytes.length * 8) / 5);
-	const chars: string[] = new Array(estimatedLength);
+	const chars = new Array(estimatedLength);
 
 	let bits = 0;
 	let value = 0;
@@ -57,15 +54,12 @@ export const base32Encode = (input: string | Uint8Array, withPadding = true): st
 		}
 	}
 
-	if (bits > 0)
-		chars[charIndex++] = BASE32_ALPHABET[(value << (5 - bits)) & 31];
+	if (bits > 0) chars[charIndex++] = BASE32_ALPHABET[(value << (5 - bits)) & 31];
 
 	// Performance: Use slice + join instead of string concatenation
 	let result = chars.slice(0, charIndex).join('');
 
-	if (withPadding)
-		while (result.length % 8 !== 0)
-			result += '=';
+	if (withPadding) while (result.length % 8 !== 0) result += '=';
 
 	return result;
 };
@@ -89,8 +83,7 @@ export const base32Decode = (base32: string): Uint8Array => {
 	const cleanBase32 = base32.toUpperCase().replace(/=+$/, '');
 	const inputLength = cleanBase32.length;
 
-	if (inputLength === 0)
-		return new Uint8Array(0);
+	if (inputLength === 0) return new Uint8Array(0);
 
 	// Performance: Pre-calculate output size
 	// Each 8 Base32 chars → 5 bytes
@@ -107,7 +100,10 @@ export const base32Decode = (base32: string): Uint8Array => {
 
 		// Security: Validate character without leaking which character failed
 		if (charValue === undefined)
-			throw new InternalError(TOTP_ERROR_KEYS.INVALID_BASE32_CHARACTER, 'Invalid Base32 character');
+			throw new InternalError(
+				TOTP_ERROR_KEYS.INVALID_BASE32_CHARACTER,
+				'Invalid Base32 character'
+			);
 
 		value = (value << 5) | charValue;
 		bits += 5;

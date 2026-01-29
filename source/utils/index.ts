@@ -4,4 +4,3 @@ export { dynamicTruncation } from './dynamic-truncation';
 export { generateHmac } from './generate-hmac';
 export { generateSecretBytes } from './generate-secret-bytes';
 export { timeRemaining } from './time-remaining';
-

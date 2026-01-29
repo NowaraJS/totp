@@ -42,9 +42,9 @@ describe.concurrent('hotp', () => {
 		expect(code).toMatch(/^\d{6}$/);
 	});
 
-	test('should throw for secret shorter than 16 bytes', async () => {
+	test('should throw for secret shorter than 16 bytes', () => {
 		const shortSecret = new Uint8Array(15);
-		await expect(hotp(shortSecret, 0)).rejects.toThrow(TOTP_ERROR_KEYS.WEAK_SECRET);
+		expect(hotp(shortSecret, 0)).rejects.toThrow(TOTP_ERROR_KEYS.WEAK_SECRET);
 	});
 
 	test('should work with bigint counter', async () => {
@@ -68,8 +68,7 @@ describe('hotp cache', () => {
 		}
 
 		// Fill cache with 101 different secrets
-		for (const secret of secrets)
-			await hotp(secret, 0);
+		for (const secret of secrets) await hotp(secret, 0);
 
 		// Cache should have evicted the first entry, but still work
 		const code = await hotp(secrets[0], 0);

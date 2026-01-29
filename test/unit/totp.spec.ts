@@ -66,13 +66,15 @@ describe.concurrent('verifyTotp', () => {
 		expect(valid).toBe(true);
 	});
 
-	test('should throw for window > 10', async () => {
-		await expect(verifyTotp(SECRET, '123456', { window: 11 }))
-			.rejects.toThrow(TOTP_ERROR_KEYS.INVALID_WINDOW);
+	test('should throw for window > 10', () => {
+		expect(verifyTotp(SECRET, '123456', { window: 11 })).rejects.toThrow(
+			TOTP_ERROR_KEYS.INVALID_WINDOW
+		);
 	});
 
-	test('should throw for negative window', async () => {
-		await expect(verifyTotp(SECRET, '123456', { window: -1 }))
-			.rejects.toThrow(TOTP_ERROR_KEYS.INVALID_WINDOW);
+	test('should throw for negative window', () => {
+		expect(verifyTotp(SECRET, '123456', { window: -1 })).rejects.toThrow(
+			TOTP_ERROR_KEYS.INVALID_WINDOW
+		);
 	});
 });

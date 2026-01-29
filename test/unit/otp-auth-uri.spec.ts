@@ -51,7 +51,8 @@ describe.concurrent('buildOtpAuthUri', () => {
 
 describe.concurrent('parseOtpAuthUri', () => {
 	test('should parse URI with all parameters', () => {
-		const uri = 'otpauth://totp/Example:user?secret=JBSWY3DP&issuer=Example&algorithm=SHA-256&digits=8&period=60';
+		const uri =
+			'otpauth://totp/Example:user?secret=JBSWY3DP&issuer=Example&algorithm=SHA-256&digits=8&period=60';
 		const params = parseOtpAuthUri(uri);
 		expect(params).toEqual({
 			secretBase32: 'JBSWY3DP',
@@ -72,37 +73,44 @@ describe.concurrent('parseOtpAuthUri', () => {
 	});
 
 	test('should throw for invalid protocol', () => {
-		expect(() => parseOtpAuthUri('http://totp/user?secret=ABC'))
-			.toThrow(TOTP_ERROR_KEYS.INVALID_OTP_AUTH_URI);
+		expect(() => parseOtpAuthUri('http://totp/user?secret=ABC')).toThrow(
+			TOTP_ERROR_KEYS.INVALID_OTP_AUTH_URI
+		);
 	});
 
 	test('should throw for hotp type', () => {
-		expect(() => parseOtpAuthUri('otpauth://hotp/user?secret=ABC'))
-			.toThrow(TOTP_ERROR_KEYS.INVALID_OTP_AUTH_URI);
+		expect(() => parseOtpAuthUri('otpauth://hotp/user?secret=ABC')).toThrow(
+			TOTP_ERROR_KEYS.INVALID_OTP_AUTH_URI
+		);
 	});
 
 	test('should throw for missing secret', () => {
-		expect(() => parseOtpAuthUri('otpauth://totp/user'))
-			.toThrow(TOTP_ERROR_KEYS.MISSING_SECRET);
+		expect(() => parseOtpAuthUri('otpauth://totp/user')).toThrow(
+			TOTP_ERROR_KEYS.MISSING_SECRET
+		);
 	});
 
 	test('should throw for missing label', () => {
-		expect(() => parseOtpAuthUri('otpauth://totp/?secret=ABC'))
-			.toThrow(TOTP_ERROR_KEYS.MISSING_LABEL);
+		expect(() => parseOtpAuthUri('otpauth://totp/?secret=ABC')).toThrow(
+			TOTP_ERROR_KEYS.MISSING_LABEL
+		);
 	});
 
 	test('should throw for invalid algorithm', () => {
-		expect(() => parseOtpAuthUri('otpauth://totp/user?secret=ABC&algorithm=MD5'))
-			.toThrow(TOTP_ERROR_KEYS.INVALID_ALGORITHM);
+		expect(() => parseOtpAuthUri('otpauth://totp/user?secret=ABC&algorithm=MD5')).toThrow(
+			TOTP_ERROR_KEYS.INVALID_ALGORITHM
+		);
 	});
 
 	test('should throw for invalid digits', () => {
-		expect(() => parseOtpAuthUri('otpauth://totp/user?secret=ABC&digits=4'))
-			.toThrow(TOTP_ERROR_KEYS.INVALID_DIGITS);
+		expect(() => parseOtpAuthUri('otpauth://totp/user?secret=ABC&digits=4')).toThrow(
+			TOTP_ERROR_KEYS.INVALID_DIGITS
+		);
 	});
 
 	test('should throw for invalid period', () => {
-		expect(() => parseOtpAuthUri('otpauth://totp/user?secret=ABC&period=0'))
-			.toThrow(TOTP_ERROR_KEYS.INVALID_PERIOD);
+		expect(() => parseOtpAuthUri('otpauth://totp/user?secret=ABC&period=0')).toThrow(
+			TOTP_ERROR_KEYS.INVALID_PERIOD
+		);
 	});
 });
