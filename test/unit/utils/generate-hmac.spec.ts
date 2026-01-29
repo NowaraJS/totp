@@ -4,17 +4,14 @@ import { webcrypto } from 'crypto';
 import { generateHmac } from '#/utils/generate-hmac';
 
 describe.concurrent('generateHmac', () => {
-	const _createTestKey = async (secret: Uint8Array, algorithm = 'SHA-1'): Promise<CryptoKey> => await webcrypto.subtle.importKey(
-		'raw',
-		secret,
-		{ name: 'HMAC', hash: algorithm },
-		false,
-		['sign']
-	);
+	const _createTestKey = async (secret: Uint8Array, algorithm = 'SHA-1'): Promise<CryptoKey> =>
+		await webcrypto.subtle.importKey('raw', secret, { name: 'HMAC', hash: algorithm }, false, [
+			'sign'
+		]);
 
 	const _createArrayBuffer = (text: string): ArrayBuffer => {
 		const uint8Array = new TextEncoder().encode(text);
-		return uint8Array.buffer.slice(0, uint8Array.byteLength) as ArrayBuffer;
+		return uint8Array.buffer.slice(0, uint8Array.byteLength);
 	};
 
 	test('should generate HMAC with SHA-1 algorithm', async () => {
@@ -135,26 +132,8 @@ describe.concurrent('generateHmac', () => {
 	test('should produce deterministic results', async () => {
 		// Arrange
 		const secret = new Uint8Array([
-			0x12,
-			0x34,
-			0x56,
-			0x78,
-			0x90,
-			0xab,
-			0xcd,
-			0xef,
-			0x12,
-			0x34,
-			0x56,
-			0x78,
-			0x90,
-			0xab,
-			0xcd,
-			0xef,
-			0x12,
-			0x34,
-			0x56,
-			0x78
+			0x12, 0x34, 0x56, 0x78, 0x90, 0xab, 0xcd, 0xef, 0x12, 0x34, 0x56, 0x78, 0x90, 0xab,
+			0xcd, 0xef, 0x12, 0x34, 0x56, 0x78
 		]);
 		const data = _createArrayBuffer('The quick brown fox jumps over the lazy dog');
 		const key = await _createTestKey(secret);

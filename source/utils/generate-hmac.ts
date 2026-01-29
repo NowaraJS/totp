@@ -8,10 +8,7 @@ import { webcrypto } from 'crypto';
  *
  * @returns Promise resolving to HMAC as Uint8Array
  */
-export const generateHmac = async (
-	key: CryptoKey,
-	data: ArrayBuffer
-): Promise<Uint8Array> => {
+export const generateHmac = async (key: CryptoKey, data: ArrayBuffer): Promise<Uint8Array> => {
 	const hmac = await webcrypto.subtle.sign('HMAC', key, data);
 	return new Uint8Array(hmac);
 };

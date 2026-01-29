@@ -13,7 +13,6 @@ import { TOTP_ERROR_KEYS } from '#/enums/totp-error-keys';
  * @returns Uint8Array containing the random bytes
  */
 export const generateSecretBytes = (length = 20): Uint8Array => {
-	if (length <= 0)
-		throw new InternalError(TOTP_ERROR_KEYS.INVALID_SECRET_LENGTH);
+	if (length <= 0) throw new InternalError(TOTP_ERROR_KEYS.INVALID_SECRET_LENGTH);
 	return getRandomValues(new Uint8Array(length));
 };

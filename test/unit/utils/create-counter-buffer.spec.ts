@@ -26,10 +26,10 @@ describe.concurrent('createCounterBuffer', () => {
 	});
 
 	test('should handle larger bigint values correctly', () => {
-		const counter = 0x123456789ABCDEFn;
+		const counter = 0x123456789abcdefn;
 		const buffer = createCounterBuffer(counter);
 		const view = new Uint8Array(buffer);
-		const expected = new Uint8Array([0x01, 0x23, 0x45, 0x67, 0x89, 0xAB, 0xCD, 0xEF]);
+		const expected = new Uint8Array([0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef]);
 
 		expect(view).toEqual(expected);
 	});
