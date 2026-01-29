@@ -1,6 +1,6 @@
 {
 	"name": "@nowarajs/totp",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"description": "A comprehensive Time-based One-Time Password (TOTP) and HMAC-based One-Time Password (HOTP)",
 	"keywords": [
 		"bun",
